@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Leetcode Dislikes Extensions",
+  "description": "A extension to display dislike counts on Leetcode",
+  "version": "1.0",
+  "content_scripts": [
+      {
+        "js": ["index.js"],
+        "matches": [
+          "https://leetcode.com/problems/*"
+        ]
+      }
+    ],
+  "permissions": [
+    "activeTab",
+    "https://leetcode.com"
+  ]
+}
